@@ -65,7 +65,7 @@ a,span {
 body {
     position: relative;
     min-height: 100dvh;
-    background: rgb(227,167,255);background: linear-gradient(180deg, rgba(227,167,255,1) -0%, rgba(228,240,255,1) 100%);
+    background: linear-gradient(180deg, rgba(227,167,255,.5) -0%, rgba(228,240,255,1) 100%);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
     overflow-x: hidden;
@@ -77,7 +77,7 @@ body::before {
     left: 0;
     width: 100%;
     height: calc(100% + 2em);
-    background-image: url('fondo.webp?v=16');
+    background-image: url('fondo.webp?v=17');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
