@@ -97,7 +97,7 @@ function Init(){
                 numerosSobrantes.innerText = `¡Escoge el número que quieras! Quedan ${numerosPorVender} números disponibles para comprar`;
             }
 
-            for(numero of numerosVendidos){
+            for(const numero of numerosVendidos){
                 let cambios =  false;
                 let numeroAux = numero.toString().length==1 ? '0'+numero : numero.toString();
                 if(numerosElegidosPorUsuario.includes(numeroAux)){
