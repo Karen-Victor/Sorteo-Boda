@@ -27,13 +27,48 @@ function Init(){
     }
     tabla.innerHTML = html;
 
-    document.querySelectorAll('[data-spannumero]').forEach(numero=>{
-        numero.addEventListener('click',()=>{
-            if(numero.classList.contains('sin-vender')){
-                console.log(numero.getAttribute(['data-spannumero']));
+    function ValidarNumerosDisponibles(){
+        if(numerosElegidosPorUsuario.length>0){
+            numerosElegidosPorUsuario.sort();
+
+            let html = ``;
+            for(numero of numerosElegidosPorUsuario){
+                html+=`<span class="numero-aviso">${numero}</span>`;
             }
-        })
-    });
+            contenedorNumerosAviso.innerHTML = html;
+
+            let mensaje = '';
+            if(numerosElegidosPorUsuario.length>1){
+                mensaje = `¡Hola!, quiero comprar los números: `;
+                mensaje += numerosElegidosPorUsuario.slice(0, -1).join(", ");
+                mensaje+= ` y ${numerosElegidosPorUsuario[numerosElegidosPorUsuario.length - 1]}`;
+            }else{
+                mensaje = `¡Hola!, quiero comprar el número: ${numerosElegidosPorUsuario[0]}`;
+            }
+
+            let url = "https://api.whatsapp.com/send?phone=573218768200";
+            mensaje = encodeURIComponent(mensaje);
+            url = `${url}&text=${mensaje}`;
+            enlaceComprar.href = url;
+
+            contenedorMensaje.classList.add('on');
+        }else{
+            contenedorMensaje.classList.remove('on');
+        }
+    }
+
+    document.getElementById('tabla').addEventListener('click',e=>{
+        const target = e.target;
+        if(target.hasAttribute('data-spannumero') && target.classList.contains('sin-vender')){
+            const valor = target.getAttribute('data-spannumero').toString();
+            if(!numerosElegidosPorUsuario.includes(valor)) {
+                numerosElegidosPorUsuario.push(valor);
+            }else{
+                numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(numero => numero !== valor);
+            }
+            ValidarNumerosDisponibles();
+        } 
+    })
 
     let consultando = false;
 
@@ -43,6 +78,7 @@ function Init(){
             consultando = true;
             let peticion = await fetch('numeros-vendidos.json?v='+Date.now());
             const numerosVendidos = await peticion.json();
+
             let numerosPorVender = 100-numerosVendidos.length;
             if(numerosPorVender<0) numerosPorVender = 0;
             if(numerosPorVender==0){
@@ -62,6 +98,11 @@ function Init(){
             }
             
             for(numero of numerosVendidos){
+                let numeroAux = numero.toString().length==1 ? '0'+numero : numero;
+                if(numerosElegidosPorUsuario.includes(numeroAux)){
+                    numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(valor => valor !== numeroAux);
+                    ValidarNumerosDisponibles();
+                }
                 document.getElementById(`span${numero}`).classList.remove('sin-vender');
             }
             consultando = false;
@@ -70,6 +111,6 @@ function Init(){
         }
     }
     ConsultarNumeros();
-    setInterval(ConsultarNumeros,1000);
+    setInterval(ConsultarNumeros,2000);
 }
 Init();

@@ -92,7 +92,7 @@ h1 {
     font-size: 4rem;
 }
 h1 .t1 {
-    color: #b41daa;
+    color: #a8009c;
 }
 h1 .t2 {
     color: #2e7df3;
@@ -106,8 +106,8 @@ h2 {
 
 .anuncion-fecha {
     text-align: center;
-    color: #b41daa;
-    font-size: 1.4rem;
+    color: #bd0052;
+    font-size: 1.5rem;
     text-shadow: 0px 0px 5px white;
     margin-bottom: .5em;
     padding-inline: 1em;
@@ -122,9 +122,9 @@ h2 {
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
-    color: #b41daa;
+    color: #7000c6;
     text-shadow: 0px 0px 5px white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.2em;
     padding-inline: 1em;
 }
@@ -133,8 +133,15 @@ h2 {
     text-align: center;
     padding: 2em 2em 1em 2em;
     font-size: 1.2rem;
-    color: #7628c9;
+    color: #6400ce;
     text-shadow: 0px 0px 10px white;
+}
+
+.aviso-toca {
+    text-align: center;
+    padding: .5em 1em .7em 1em;
+    color: #70006e;
+    font-size: 1.3rem;
 }
 
 .aviso-numeros {
@@ -215,7 +222,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: .4em;
-    background-color: #b41daa;
+    background-color: #a8009c;
     border-radius: 2em;
     font-size: 1.2rem;
     padding: .6em 1.2em;
@@ -317,7 +324,7 @@ h2 {
     width: 100px;
 }
 
-.contenedor-mensaje {
+#contenedorMensaje {
     position: sticky;
     display: none;
     bottom: 0;
@@ -331,19 +338,20 @@ h2 {
     align-items: center;
     gap: .8em;
 }
-.contenedor-mensaje.on {
+#contenedorMensaje.on {
     display: flex;
 }
-.contenedor-mensaje * {
+#contenedorMensaje * {
     width: fit-content;
     text-align: center;
 }
-.contenedor-mensaje .titulo-mensaje {
+#contenedorMensaje .titulo-mensaje {
     font-size: 1.1rem;
     text-align: center;
+    color: #8d4bd3;
 }
 
-.contenedor-mensaje .aviso-mensaje {
+#contenedorMensaje .aviso-mensaje {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,7 +359,7 @@ h2 {
     opacity: .6;
 }
 
-.contenedor-mensaje  #contenedorNumerosAviso {
+#contenedorMensaje  #contenedorNumerosAviso {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -359,7 +367,7 @@ h2 {
     gap: .7em;  
 }
 
-.contenedor-mensaje  #contenedorNumerosAviso .numero-aviso {
+#contenedorMensaje  #contenedorNumerosAviso .numero-aviso {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,10 +380,10 @@ h2 {
     color: #5b125a;
 }
 
-.contenedor-mensaje a {
+#contenedorMensaje a {
     border: none;
     outline: none;
-    background-color: #5b125a;
+    background-color: #8b0089;
     color: white;
     border-radius: 2em;
     padding: .5em 1em;
