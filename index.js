@@ -20,7 +20,7 @@ function Init(){
 
     let html = ``;
     for(let i=0; i<100; i++){
-        html += `<span class="sin-vender" id="span${i}">${i}</span>`;
+        html += `<span class="sin-vender" id="span${i}" data-spannumero>${i}</span>`;
     }
     tabla.innerHTML = html;
 
