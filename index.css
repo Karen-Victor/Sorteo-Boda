@@ -63,6 +63,7 @@ a,span {
 }
 
 body {
+    position: relative;
     min-height: 100dvh;
     background: rgb(227,167,255);background: linear-gradient(180deg, rgba(227,167,255,1) -0%, rgba(228,240,255,1) 100%);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -314,6 +315,71 @@ h2 {
 }
 .div-detalles .div-imagen img {
     width: 100px;
+}
+
+.contenedor-mensaje {
+    position: sticky;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(239, 232, 255);
+    z-index: 1000;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8em;
+}
+.contenedor-mensaje.on {
+    display: flex;
+}
+.contenedor-mensaje * {
+    width: fit-content;
+    text-align: center;
+}
+.contenedor-mensaje .titulo-mensaje {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.contenedor-mensaje .aviso-mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    opacity: .6;
+}
+
+.contenedor-mensaje  #contenedorNumerosAviso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .7em;  
+}
+
+.contenedor-mensaje  #contenedorNumerosAviso .numero-aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px #00ffd5;
+    border-radius: 50%;
+    width: max-content;
+    aspect-ratio: 1/1;
+    color: #5b125a;
+}
+
+.contenedor-mensaje a {
+    border: none;
+    outline: none;
+    background-color: #5b125a;
+    color: white;
+    border-radius: 2em;
+    padding: .5em 1em;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {

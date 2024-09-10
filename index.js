@@ -1,4 +1,6 @@
 function Init(){
+    let numerosElegidosPorUsuario = [];
+
     function calcularTiempoRestante() {
         const ahora = new Date();
         const fechaObjetivo = new Date('2024-10-12T00:00:00');
@@ -20,9 +22,18 @@ function Init(){
 
     let html = ``;
     for(let i=0; i<100; i++){
-        html += `<span class="sin-vender" id="span${i}" data-spannumero>${i}</span>`;
+        let numero = i.toString().length==1 ? '0'+i : i;
+        html += `<span class="sin-vender" id="span${i}" data-spannumero="${numero}">${numero}</span>`;
     }
     tabla.innerHTML = html;
+
+    document.querySelectorAll('[data-spannumero]').forEach(numero=>{
+        numero.addEventListener('click',()=>{
+            if(numero.classList.contains('sin-vender')){
+                console.log(numero.getAttribute(['data-spannumero']));
+            }
+        })
+    });
 
     let consultando = false;
 
