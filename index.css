@@ -67,6 +67,7 @@ body {
     background: rgb(227,167,255);background: linear-gradient(180deg, rgba(227,167,255,1) -0%, rgba(228,240,255,1) 100%);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .titulo {
