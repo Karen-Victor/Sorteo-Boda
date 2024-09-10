@@ -11,7 +11,7 @@ function Init(){
         try {
             if(consultando) return;
             consultando = true;
-            let peticion = await fetch('https://github.com/Karen-Victor/Sorteo-Boda/blob/d406af7f209b1d610080df8470196efce174216d/numeros-vendidos.json');
+            let peticion = await fetch('https://raw.githubusercontent.com/Karen-Victor/Sorteo-Boda/main/numeros-vendidos.json?v='+Date.now());
             const numerosVendidos = await peticion.json();
             for(numero of numerosVendidos){
                 document.getElementById(`span${numero}`).classList.remove('sin-vender');
