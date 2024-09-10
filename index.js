@@ -32,6 +32,24 @@ function Init(){
             consultando = true;
             let peticion = await fetch('numeros-vendidos.json?v='+Date.now());
             const numerosVendidos = await peticion.json();
+            let numerosPorVender = 100-numerosVendidos.length;
+            if(numerosPorVender<0) numerosPorVender = 0;
+            if(numerosPorVender==0){
+                numerosSobrantes.innerText = `¡Ya se vendieron todos los números!`;
+            }else if(numerosPorVender==1){
+                numerosSobrantes.innerText = `¡Apurate! Queda sólo 1 número disponible para comprar`;
+            }else if(numerosPorVender<=5){
+                numerosSobrantes.innerText = `¡Rápido! Quedan los últimos ${numerosPorVender} números disponibles para comprar`;
+            }else if(numerosPorVender<=10){
+                numerosSobrantes.innerText = `¡Ya casi se acaban! Quedan los últimos ${numerosPorVender} números disponibles para comprar`;
+            }else if(numerosPorVender<=25){
+                numerosSobrantes.innerText = `¡Se están agotando! Quedan solo ${numerosPorVender} números disponibles para comprar`;
+            }else if(numerosPorVender<=50){
+                numerosSobrantes.innerText = `¡Escoge tu número! Quedan solo ${numerosPorVender} números disponibles para comprar`;
+            }else{
+                numerosSobrantes.innerText = `¡Escoge el número que quieras! Quedan ${numerosPorVender} números disponibles para comprar`;
+            }
+            
             for(numero of numerosVendidos){
                 document.getElementById(`span${numero}`).classList.remove('sin-vender');
             }
