@@ -71,14 +71,14 @@ body {
 }
 
 .titulo {
-    animation: titulo 1.5s linear infinite alternate;
+    animation: titulo 1s linear infinite alternate;
 }
 @keyframes titulo {
     from {
         scale: 1;
     }
     to {
-        scale: 1.05;
+        scale: .95;
     }
 }
 
@@ -103,6 +103,38 @@ h2 {
     margin-bottom: .5rem;
 }
 
+.anuncion-fecha {
+    text-align: center;
+    color: #b41daa;
+    font-size: 1.4rem;
+    text-shadow: 0px 0px 5px white;
+    margin-bottom: .5em;
+    padding-inline: 1em;
+}
+
+#spanTemporizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #b41daa;
+    text-shadow: 0px 0px 5px white;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    padding-inline: 1em;
+}
+
+.aviso-numeros {
+    font-size: .9rem;
+    text-align: center;
+    padding: 2em 2em 2em 2em;
+    opacity: .6;
+}
+
 #tabla {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -110,7 +142,7 @@ h2 {
     max-width: 400px;
     gap: 1em;
     margin: 0 auto;
-    padding: 2em;
+    padding: 0em 2em 2em 2em;
 }
 
 #tabla span {
@@ -219,6 +251,7 @@ h2 {
 }
 .div-precio .metodo-pago .numero-celular {
     color: #fffc00;
+    font-size: 1.4rem;
 }
 .div-precio .metodo-pago .enlace {
     cursor: pointer;
@@ -232,18 +265,20 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: white;
+    background-color: #e8bee7;
 }
 
 .div-detalles {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: white;
-    max-width: 700px;
+    background-color: #e8bee7;
+    max-width: 900px;
     padding: 1em;
     gap: 1em;
     line-height: 1.2em;
     font-size: 1.2rem;
+    color: #8d4bd3;
+    text-wrap: balance;
 }
 
 .div-detalles span {
@@ -251,14 +286,20 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    padding: 1em;
 }
 
 .div-detalles .div-imagen {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17rem;
     margin: 0 auto;
+    background-color: rgb(169, 120, 221);
+    color: white;
+    border-radius: 2em;
+    padding: 1em;
 }
 .div-detalles .div-imagen h3 {
     text-align: center;
