@@ -1,20 +1,27 @@
 function Init(){
+    let html = ``;
+    for(let i=0; i<100; i++){
+        html += `<span class="sin-vender" id="span${i}">${i}</span>`;
+    }
+    tabla.innerHTML = html;
+
     let consultando = false;
-    setInterval(async ()=>{
+
+    async function ConsultarNumeros(){
         try {
             if(consultando) return;
             consultando = true;
-            const peticion = await fetch('https://github.com/Karen-Victor/Sorteo-Boda/blob/main/numeros-vendidos.json?v=4');
+            let peticion = await fetch('numeros-vendidos.json?v='+Date.now());
             const numerosVendidos = await peticion.json();
-            let html = ``;
-            for(let i=0; i<100; i++){
-                const clase = numerosVendidos.includes(i) ? ' class="sin-vender"' : '';
-                html += `<span ${clase}>${i}</span>`;
+            for(numero of numerosVendidos){
+                document.getElementById(`span${numero}`).classList.remove('sin-vender');
             }
-            tabla.innerHTML = html;
+            consultando = false;
         } catch (error) {
             consultando = false;
         }
-    },1000);
+    }
+    ConsultarNumeros();
+    setInterval(ConsultarNumeros,1000);
 }
 Init();
