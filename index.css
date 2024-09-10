@@ -69,6 +69,18 @@ body {
     width: 100%;
 }
 
+.titulo {
+    animation: titulo 1.5s linear infinite alternate;
+}
+@keyframes titulo {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.05;
+    }
+}
+
 h1,h2 {
     width: 100%;
     text-align: center;
@@ -106,22 +118,31 @@ h2 {
     justify-content: center;
     align-items: center;
     color: #5b125a;
-    background-color: white;
     font-weight: bold;
     width: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 1px rgb(0, 255, 213);
-    font-size: 1.2rem;
-}
-
-#tabla span.vendido {
     background-color: rgb(227, 227, 227);
     box-shadow: 0px 0px 5px 1px #5b125a;
     font-size: 1rem;
 }
-#tabla span.vendido::after {
+
+#tabla span.sin-vender {
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgb(0, 255, 213);
+    font-size: 1.2rem;
+    animation: numeros 1s linear infinite alternate;
+}
+@keyframes numeros {
+    from {
+        box-shadow: 0px 0px 0px 1px rgb(0, 255, 213);
+    }
+    to {
+        box-shadow: 0px 0px 30px 1px rgb(0, 255, 213);
+    }
+}
+#tabla span:not(.sin-vender):after {
     content: 'X';
     position: absolute;
     display: flex;
@@ -151,13 +172,43 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .3em;
+    gap: .4em;
     background-color: #b41daa;
     border-radius: 2em;
     font-size: 1.2rem;
     padding: .6em 1.2em;
     color: white;
     max-width: fit-content;
+}
+
+.div-precio .div-valor {
+    animation: div-valor 1.5s linear infinite alternate;
+}
+@keyframes div-valor {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.1;
+    }
+}
+.div-precio .metodo-pago {
+    padding-block: 2em;
+}
+.div-precio .metodo-pago .span-nequi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.5rem;
+}
+.div-precio .metodo-pago .span-nequi .logo-nequi {
+ width: 40px;
+}
+.div-precio .metodo-pago .qr {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 1em;
 }
 
 .div-contenedor-detalles {
@@ -206,11 +257,6 @@ h2 {
         max-width: 800px;
     }
 
-    .div-precio {
-        flex-direction: row;
-    }
-
-    
     .div-detalles {
         grid-template-columns: repeat(2, 1fr);
         gap: 6em;
