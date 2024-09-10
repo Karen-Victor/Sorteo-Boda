@@ -212,6 +212,20 @@ h2 {
     border-radius: 1em;
 }
 
+.div-precio .metodo-pago .informacion {
+    margin-top: 1em;
+    text-align: center;
+}
+.div-precio .metodo-pago .numero-celular {
+    color: #fffc00;
+}
+.div-precio .metodo-pago .enlace {
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-align: center;
+    color: lawngreen;
+}
+
 .div-contenedor-detalles {
     display: flex;
     justify-content: center;
