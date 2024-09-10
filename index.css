@@ -65,7 +65,8 @@ a,span {
 body {
     min-height: 100dvh;
     background: rgb(227,167,255);background: linear-gradient(180deg, rgba(227,167,255,1) -0%, rgba(228,240,255,1) 100%);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
 }
 
 h1,h2 {
@@ -85,7 +86,7 @@ h2 {
     width: 100%;
     max-width: 400px;
     gap: 1em;
-    padding: 1em;
+    padding: 2em;
     margin: 0 auto;
 }
 
@@ -100,11 +101,15 @@ h2 {
     width: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    overflow: hidden; 
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 1px rgb(0, 255, 213);
+    font-size: 1.2rem;
 }
 
 #tabla span.vendido {
     background-color: rgb(227, 227, 227);
+    box-shadow: 0px 0px 5px 1px #5b125a;
+    font-size: 1rem;
 }
 #tabla span.vendido::after {
     content: 'X';
@@ -120,4 +125,11 @@ h2 {
     font-size: 2em;
     opacity: 0.2;
     color: #5b125a;
+}
+
+@media (min-width: 768px) {
+    #tabla {
+        grid-template-columns: repeat(10, 1fr);
+        max-width: 800px;
+    }
 }
