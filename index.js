@@ -96,13 +96,15 @@ function Init(){
             }else{
                 numerosSobrantes.innerText = `¡Escoge el número que quieras! Quedan ${numerosPorVender} números disponibles para comprar`;
             }
-            
+
             for(numero of numerosVendidos){
-                let numeroAux = numero.toString().length==1 ? '0'+numero : numero;
+                let cambios =  false;
+                let numeroAux = numero.toString().length==1 ? '0'+numero : numero.toString();
                 if(numerosElegidosPorUsuario.includes(numeroAux)){
+                    cambios = true;
                     numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(valor => valor !== numeroAux);
-                    ValidarNumerosDisponibles();
                 }
+                if(cambios) ValidarNumerosDisponibles();
                 document.getElementById(`span${numero}`).classList.remove('sin-vender');
             }
             consultando = false;
@@ -111,6 +113,6 @@ function Init(){
         }
     }
     ConsultarNumeros();
-    setInterval(ConsultarNumeros,2000);
+    setInterval(ConsultarNumeros,1000);
 }
 Init();
