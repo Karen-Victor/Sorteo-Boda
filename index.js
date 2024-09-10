@@ -4,7 +4,7 @@ function Init(){
         try {
             if(consultando) return;
             consultando = true;
-            const peticion = await fetch('https://github.com/Karen-Victor/Sorteo-Boda/blob/main/numeros-vendidos.json?v=3');
+            const peticion = await fetch('https://github.com/Karen-Victor/Sorteo-Boda/blob/main/numeros-vendidos.json?v=4');
             const numerosVendidos = await peticion.json();
             let html = ``;
             for(let i=0; i<100; i++){
