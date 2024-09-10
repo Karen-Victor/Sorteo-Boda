@@ -195,6 +195,7 @@ h2 {
 }
 .div-precio .metodo-pago {
     padding-block: 2em;
+    max-width: 400px;
 }
 .div-precio .metodo-pago .span-nequi {
     display: flex;
