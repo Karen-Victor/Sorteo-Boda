@@ -30,6 +30,7 @@ function Init(){
             <span class="titulo">#</span>
             <span class="titulo">Nombre</span>
             <span class="titulo">N. Celular</span>
+            <span class="titulo">Pago</span>
             `;
 
             const valorFiltroVendidas = filtroVendidas.value;
@@ -51,7 +52,8 @@ function Init(){
                 let numero2Cifras = boleta.numero.toString().length==1 ? '0'+boleta.numero : boleta.numero.toString();
                 html+=`
                 <span class="numero-boleta">${numero2Cifras}</span>
-                <span class="nombre-boleta">${boleta.nombre}</span>
+                <span>${boleta.nombre}</span>
+                <span>${boleta.celular}</span>
                 <span class="pagado-boleta${boleta.pagado ? ' pagado' : ''}">${boleta.pagado ? 'Pagado' : 'Sin pagar'}</span>
                 `;
             }

@@ -27,7 +27,7 @@ select, input {
 
 #tablaBoletas {
     display: grid;
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content max-content;
     width: max-content;
     max-width: 100%;
     background-color: white;
