@@ -79,9 +79,7 @@ function Init(){
             let peticion = await fetch('numeros-vendidos.json?v='+Date.now());
             const datosBoletas = await peticion.json();
 
-            const numerosVendidos = datosBoletas.filter(obj => obj.pagado === true);
-
-            let numerosPorVender = 100-numerosVendidos.length;
+            let numerosPorVender = 100-datosBoletas.length;
             if(numerosPorVender<0) numerosPorVender = 0;
             if(numerosPorVender==0){
                 numerosSobrantes.innerText = `¡Ya se vendieron todos los números!`;
@@ -107,7 +105,7 @@ function Init(){
                     numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(valor => valor !== numero2Cifras);
                 }
                 if(cambios) ValidarNumerosDisponibles();
-                if(boleta.pagado) document.getElementById(`span${boleta.numero}`).classList.remove('sin-vender');
+                document.getElementById(`span${boleta.numero}`).classList.remove('sin-vender');
             }
             consultando = false;
         } catch (error) {
