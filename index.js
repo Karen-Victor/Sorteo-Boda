@@ -77,7 +77,9 @@ function Init(){
             if(consultando) return;
             consultando = true;
             let peticion = await fetch('numeros-vendidos.json?v='+Date.now());
-            const numerosVendidos = await peticion.json();
+            const datosBoletas = await peticion.json();
+
+            const numerosVendidos = datosBoletas.filter(obj => obj.pagado === true);
 
             let numerosPorVender = 100-numerosVendidos.length;
             if(numerosPorVender<0) numerosPorVender = 0;
@@ -97,15 +99,15 @@ function Init(){
                 numerosSobrantes.innerText = `¡Escoge el número que quieras! Quedan ${numerosPorVender} números disponibles para comprar`;
             }
 
-            for(const numero of numerosVendidos){
+            for(const boleta of datosBoletas){
                 let cambios =  false;
-                let numeroAux = numero.toString().length==1 ? '0'+numero : numero.toString();
-                if(numerosElegidosPorUsuario.includes(numeroAux)){
+                let numero2Cifras = boleta.numero.toString().length==1 ? '0'+boleta.numero : boleta.numero.toString();
+                if(numerosElegidosPorUsuario.includes(numero2Cifras)){
                     cambios = true;
-                    numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(valor => valor !== numeroAux);
+                    numerosElegidosPorUsuario = numerosElegidosPorUsuario.filter(valor => valor !== numero2Cifras);
                 }
                 if(cambios) ValidarNumerosDisponibles();
-                document.getElementById(`span${numero}`).classList.remove('sin-vender');
+                if(boleta.pagado) document.getElementById(`span${boleta.numero}`).classList.remove('sin-vender');
             }
             consultando = false;
         } catch (error) {
