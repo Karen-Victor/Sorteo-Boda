@@ -113,6 +113,6 @@ function Init(){
         }
     }
     ConsultarNumeros();
-    setInterval(ConsultarNumeros,1000);
+    // setInterval(ConsultarNumeros,1000);
 }
 Init();
