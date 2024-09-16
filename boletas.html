@@ -3,52 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css?v=22">
-    <link rel="shortcut icon" href="icono.ico?v=22" type="image/x-icon">
-    <script defer src="index.js?v=22"></script>
+    <link rel="stylesheet" href="base.css?v=23">
+    <link rel="stylesheet" href="boletas.css?v=23">
+    <link rel="shortcut icon" href="icono.ico?v=23" type="image/x-icon">
+    <script defer src="boletas.js?v=23"></script>
     <title>Sorteo para nuestra boda</title>
 </head>
 <body>
-    <div class="titulo">
-        <h1><span class="t1">¡GRAN</span><span class="t2">SORTEO!</span></h1>
-        <h2>$500.000 mil pesos</h2>    
+    <h1>Boletas vendidas</h1>
+    <div class="div-detalles">
+        <span id="spanTodos"></span>
+        <span id="spanPagadas"></span>
+        <span id="spanSinPagar"></span>
     </div>
-    <span class="anuncion-fecha">¡Juega el sábado 12 de octubre de 2024!</span>
-    <span id="spanTemporizador"></span>
-    <span id="numerosSobrantes">Escoge tu número!</span>
-    <span class="aviso-toca">¡Toca los números para seleccionarlos!</span>
-    <span class="aviso-numeros">🚫 Los números tachados ya están vendidos</span>
-    <div id="tabla"></div>
-    <div class="div-precio">
-        <div class="div-valor">
-            <span>VALOR</span>
-            <span>$10.000</span>
-        </div>
-        <div class="metodo-pago">
-            <span class="span-nequi">Pago por Nequi <img class="logo-nequi" src="logo_nequi.png?v=22" alt=""></span>
-            <span class="numero-celular">3218768200</span>
-            <img class="qr" src="qr_nequi.jpg?v=22" alt="">
-            <span class="informacion">Envía tu nombre, tu número de contacto, los números que deseas comprar y el comprobante de pago al siguiente número de WhatsApp para validar tu compra.</span>
-            <span class="informacion"></span>
-            <span class="numero-celular">3218768200</span>
-            <a class="enlace" href="https://wa.me/573218768200" target="_blank">Click aquí para ir al WhatsApp</a>
-            <span class="informacion">¡Muchas gracias!</span>
-        </div>
-    </div>
-    <div class="div-contenedor-detalles">
-        <div class="div-detalles">
-            <span>Juega el sábado 12 de octubre de 2024 con las últimas 2 cifras de la lotería Boyacá</span>
-            <div class="div-imagen">
-                <h3>Estamos reuniendo fondos para nuestra boda ¡Gracias por tu colaboración!</h3>
-                <img src="casados.png?v=22" alt="">
-            </div>
-        </div>
-    </div>
-    <div id="contenedorMensaje">
-        <span class="titulo-mensaje">Has elegido los siguientes números</span>
-        <span class="aviso-mensaje">🚫 Para quitar un número solo debes seleccionarlo de nuevo en la tabla</span>
-        <div id="contenedorNumerosAviso"></div>
-        <a id="enlaceComprar" target="_blank">Comprar</a>
-    </div>
+    <select id="filtroVendidas">
+        <option value="0">Todos</option>
+        <option value="1">Pagadas</option>
+        <option value="2">Sin pagar</option>
+    </select>
+    <input id="inputNombre" type="text">
+    <div id="tablaBoletas"></div>
 </body>
 </html>

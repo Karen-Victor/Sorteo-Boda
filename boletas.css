@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+h1 {
+    color: #a8009c;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.div-detalles span{
+    font-size: 1.5rem;
+    color: #7000c6;
+}
+
+select, input {
+    border: none;
+    outline: none;
+    background-color: #a978dd;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+}
+
+#tablaBoletas {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    width: max-content;
+    max-width: 100%;
+    background-color: white;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+#tablaBoletas span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: .5em;
+}
+
+#tablaBoletas .titulo {
+    background-color: #70006e;
+    color: white;
+}
+
+#tablaBoletas .numero-boleta {
+    width: max-content;
+}
+
+#tablaBoletas .pagado-boleta {
+    background-color: rgb(184, 0, 0);
+    color: white;
+}
+#tablaBoletas .pagado-boleta.pagado {
+    background-color: rgb(29, 126, 0);
+}
