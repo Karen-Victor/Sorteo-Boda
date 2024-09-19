@@ -62,7 +62,7 @@
     {"numero": 60, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
     {"numero": 61, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
     {"numero": 62, "nombre": "Blanoly Méndez", "celular": "3224624294", "pagado": true},
-    {"numero": 63, "nombre": "Olga de la quinta", "celular": "3024593626", "pagado": false},
+    {"numero": 63, "nombre": "Olga de la quinta", "celular": "3024593626", "pagado": true},
     {"numero": 64, "nombre": "Consuelo Parra (Tía)", "celular": "", "pagado": true},
     {"numero": 65, "nombre": "Priscila Rodriguez", "celular": "3125229679", "pagado": false},
     {"numero": 66, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
