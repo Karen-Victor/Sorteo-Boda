@@ -1,12 +1,12 @@
 [
     {"numero": 0, "nombre": "Jeizoon Méndez", "celular": "3144623059", "pagado": false},
-    {"numero": 1, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": false},
+    {"numero": 1, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 2, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 3, "nombre": "Fernándo Calderón", "celular": "3208882227", "pagado": true},
     {"numero": 4, "nombre": "Juan Botina", "celular": "", "pagado": false},
     {"numero": 5, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 6, "nombre": "Ángela de la quinta", "celular": "3217636070", "pagado": true},
-    {"numero": 7, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": false},
+    {"numero": 7, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 8, "nombre": "Jamer Lamprea", "celular": "", "pagado": true},
     {"numero": 9, "nombre": "Jamer Lamprea", "celular": "", "pagado": true},
     {"numero": 10, "nombre": "Mary Esposa del pastor de la quinta", "celular": "3232420837", "pagado": false},
@@ -22,7 +22,7 @@
     {"numero": 20, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 21, "nombre": "Blanca Muñoz", "celular": "3202620491", "pagado": false},
     {"numero": 22, "nombre": "Jhenifer Méndez", "celular": "3227356987", "pagado": false},
-    {"numero": 23, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": false},
+    {"numero": 23, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 24, "nombre": "Sandra de la quinta", "celular": "+3202089980", "pagado": true},
     {"numero": 25, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 26, "nombre": "Blanoly Méndez", "celular": "3224624294", "pagado": true},
@@ -77,7 +77,7 @@
     {"numero": 75, "nombre": "Betty de la quinta", "celular": "3017165239", "pagado": true},
     {"numero": 76, "nombre": "Estela María de la quinta", "celular": "3023969277", "pagado": false},
     {"numero": 77, "nombre": "Victor Osorio Parra", "celular": "3143428541", "pagado": false},
-    {"numero": 78, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": false},
+    {"numero": 78, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 79, "nombre": "Ferney Ramírez", "celular": "3134372607", "pagado": true},
     {"numero": 80, "nombre": "Marleny Padilla", "celular": "3133316981", "pagado": false},
     {"numero": 81, "nombre": "Cristina Carranza", "celular": "3208882227", "pagado": true},
@@ -97,7 +97,7 @@
     {"numero": 95, "nombre": "Henry Montenegro", "celular": "3118578857", "pagado": true},
     {"numero": 96, "nombre": "Jhenifer Méndez", "celular": "3227356987", "pagado": false},
     {"numero": 97, "nombre": "María Aurora", "celular": "3108091918", "pagado": true},
-    {"numero": 98, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": false},
+    {"numero": 98, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 99, "nombre": "Karen Méndez Muñoz", "celular": "3218768200", "pagado": false}
 ]
   
