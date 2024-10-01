@@ -68,7 +68,7 @@
     {"numero": 66, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
     {"numero": 67, "nombre": "Johana Méndez (Tía)", "celular": "3202969038", "pagado": false},
     {"numero": 68, "nombre": "Deisy Lorena", "celular": "3128200663", "pagado": true},
-    {"numero": 69, "nombre": "Felipe Niño", "celular": "3132323072", "pagado": false},
+    {"numero": 69, "nombre": "Felipe Niño", "celular": "3132323072", "pagado": true},
     {"numero": 70, "nombre": "Plinio Parra", "celular": "3132547400", "pagado": true},
     {"numero": 71, "nombre": "Maribel Gil", "celular": "3203026598", "pagado": true},
     {"numero": 72, "nombre": "Ecceomo Montenegro (Tío)", "celular": "", "pagado": true},
