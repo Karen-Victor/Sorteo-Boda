@@ -15,7 +15,7 @@
     {"numero": 13, "nombre": "Luis Niño", "celular": "3108061112", "pagado": true},
     {"numero": 14, "nombre": "Sandra Rodríguez", "celular": "3227011331", "pagado": true},
     {"numero": 15, "nombre": "Jhon Méndez", "celular": "3134643032", "pagado": true},
-    {"numero": 16, "nombre": "Nélson Tovar", "celular": "3219433913", "pagado": false},
+    {"numero": 16, "nombre": "Nélson Tovar", "celular": "3219433913", "pagado": true},
     {"numero": 17, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 18, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
     {"numero": 19, "nombre": "William Perdómo", "celular": "3112515902", "pagado": true},
