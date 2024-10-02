@@ -55,7 +55,7 @@
     {"numero": 53, "nombre": "Fabian Padilla", "celular": "3249156056", "pagado": true},
     {"numero": 54, "nombre": "Yeraldi chaparro", "celular": "3234897620", "pagado": true},
     {"numero": 55, "nombre": "Johana Méndez (Hermana)", "celular": "3138386062", "pagado": false},
-    {"numero": 56, "nombre": "Yurani", "celular": "3004548356", "pagado": false},
+    {"numero": 56, "nombre": "Yurani", "celular": "3004548356", "pagado": true},
     {"numero": 57, "nombre": "Paula de la quinta", "celular": "3203977762", "pagado": true},
     {"numero": 58, "nombre": "Eliseo Velasquez", "celular": "3044428645", "pagado": true},
     {"numero": 59, "nombre": "Isabel Prieto", "celular": "3167665134", "pagado": true},
