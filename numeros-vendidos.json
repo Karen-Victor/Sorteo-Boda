@@ -75,7 +75,7 @@
     {"numero": 73, "nombre": "Francys Herrera", "celular": "3204422467", "pagado": true},
     {"numero": 74, "nombre": "Plinio Parra", "celular": "3132547400", "pagado": true},
     {"numero": 75, "nombre": "Betty de la quinta", "celular": "3017165239", "pagado": true},
-    {"numero": 76, "nombre": "Estela María de la quinta", "celular": "3023969277", "pagado": false},
+    {"numero": 76, "nombre": "Estela María de la quinta", "celular": "3023969277", "pagado": true},
     {"numero": 77, "nombre": "Victor Osorio Parra", "celular": "3143428541", "pagado": true},
     {"numero": 78, "nombre": "César Osorio Arroyave", "celular": "3142953353", "pagado": true},
     {"numero": 79, "nombre": "Ferney Ramírez", "celular": "3134372607", "pagado": true},
