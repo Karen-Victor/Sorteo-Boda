@@ -86,7 +86,7 @@
     {"numero": 84, "nombre": "Lorena Rodríguez", "celular": "3043366097", "pagado": true},
     {"numero": 85, "nombre": "Deisy Lorena", "celular": "3128200663", "pagado": true},
     {"numero": 86, "nombre": "Blanca Gómez", "celular": "3015586915", "pagado": false},
-    {"numero": 87, "nombre": "Fernándo Muñoz", "celular": "", "pagado": false},
+    {"numero": 87, "nombre": "Fernándo Muñoz", "celular": "", "pagado": true},
     {"numero": 88, "nombre": "Fabio Garzón", "celular": "", "pagado": true},
     {"numero": 89, "nombre": "Andrés Piñeros", "celular": "3017914755", "pagado": true},
     {"numero": 90, "nombre": "Karol Mora", "celular": "3203957800", "pagado": true},
