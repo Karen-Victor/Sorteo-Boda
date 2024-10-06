@@ -49,7 +49,7 @@
     {"numero": 47, "nombre": "Luz Marina Arevalo", "celular": "3125207046", "pagado": true},
     {"numero": 48, "nombre": "Maribel Gil", "celular": "3203026598", "pagado": false},
     {"numero": 49, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
-    {"numero": 50, "nombre": "Diana Avilán", "celular": "3214806765", "pagado": false},
+    {"numero": 50, "nombre": "Diana Avilán", "celular": "3214806765", "pagado": true},
     {"numero": 51, "nombre": "Johana Méndez (Tía)", "celular": "3202969038", "pagado": true},
     {"numero": 52, "nombre": "Hernán Segura (Vecino)", "celular": "", "pagado": true},
     {"numero": 53, "nombre": "Fabian Padilla", "celular": "3249156056", "pagado": true},
