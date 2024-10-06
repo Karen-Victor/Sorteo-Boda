@@ -41,7 +41,7 @@
     {"numero": 39, "nombre": "Eduard Velasquez", "celular": "3004326376", "pagado": true},
     {"numero": 40, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
     {"numero": 41, "nombre": "Leidy Niño", "celular": "", "pagado": true},
-    {"numero": 42, "nombre": "Miguel Garzón", "celular": "3167665134", "pagado": false},
+    {"numero": 42, "nombre": "Miguel Garzón", "celular": "3167665134", "pagado": true},
     {"numero": 43, "nombre": "Juan Botina", "celular": "", "pagado": true},
     {"numero": 44, "nombre": "Alejandra Díaz", "celular": "3223031180", "pagado": true},
     {"numero": 45, "nombre": "Álvaro Doctor", "celular": "", "pagado": false},
