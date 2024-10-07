@@ -91,7 +91,7 @@
     {"numero": 89, "nombre": "Andrés Piñeros", "celular": "3017914755", "pagado": true},
     {"numero": 90, "nombre": "Karol Mora", "celular": "3203957800", "pagado": true},
     {"numero": 91, "nombre": "Gaby Reyes", "celular": "3203957800", "pagado": true},
-    {"numero": 92, "nombre": "Deisy Ríos", "celular": "3028654471", "pagado": false},
+    {"numero": 92, "nombre": "Deisy Ríos", "celular": "3028654471", "pagado": true},
     {"numero": 93, "nombre": "Ximena Cardona", "celular": "3016205021", "pagado": true},
     {"numero": 94, "nombre": "Andrés Piñeros", "celular": "3017914755", "pagado": true},
     {"numero": 95, "nombre": "Henry Montenegro", "celular": "3118578857", "pagado": true},
